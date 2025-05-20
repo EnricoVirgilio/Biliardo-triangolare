@@ -121,7 +121,7 @@ void RangeInput::move_circle(sf::Event event, float max_parameter,
     x_centro = x_mouse;
   }
 
-  circle_.setPosition({x_centro - r, y_centro - r});
+  circle_.setPosition({x_centro, y_centro});
   float pixel_pos = circle_.getPosition().x - xMinLine_ +
                     r;  // restituisce la distanza in pixel del centro del
                         // cerchio rispetto a xMinLine_
